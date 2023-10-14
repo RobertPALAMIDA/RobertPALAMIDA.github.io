@@ -1081,8 +1081,12 @@ section{
       min-height: 100vh;
    }
  .carousel-container {
-  width: 325px;
-  overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 325px;
+    overflow: hidden;
  }
  .carousel-container .slider-wrapper .image-list {
     display: grid;
