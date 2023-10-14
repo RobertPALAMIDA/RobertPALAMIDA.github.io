@@ -302,13 +302,7 @@ section{
   z-index: 1; /* Ensure the arrows are above the images */
 }
 
-.wrapper i.fa-angle-left {
-  left: 10px; /* Adjust the position */
-}
 
-.wrapper i.fa-angle-right {
-  right: 10px; /* Adjust the position */
-}
 
 /* Add this rule to make the arrows visible */
 .wrapper i:hover {
