@@ -18,7 +18,7 @@ body {font-size:16px;}
 <script defer>
    const carousel = document.querySelector(".carousel"); 
     const dragging = (e) => {
-    console.scrollLeft = e.pageX;
+    carousel.scrollLeft = e.pageX;
   }
   carousel.addEventListener("mousemove", dragging);
 </script>
