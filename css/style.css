@@ -1089,7 +1089,7 @@ section{
     overflow: hidden;
  }
  .carousel-container .slider-wrapper .image-list {
-    display: grid;
+    display: flex;
     gap: 18px;
     font-size: 0;
     overflow-x:auto;
