@@ -279,20 +279,25 @@ section{
 }
 
 .wrapper{
-      max-width: 1200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-   }
-   .wrapper .carousel {
+   max-width: 1200px;
+   padding: 0 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+.wrapper .carousel {
    white-space: nowrap;
    font-size: 0px;
    cursor:pointer;
-   }   
+   overflow:hidden;
+}   
  .carousel img{
     height: 340px;
     object-fit: cover;
     margin-left:14px;
     width: calc(100% / 3);
  }
+.carousel img:first-child{
+   margin-left:20px;
+}
