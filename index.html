@@ -57,13 +57,13 @@ body {font-size:16px;}
   <a href="services.html">Services</a> 
   
   <!--Searchbar-->
-  <section class="search-form">
-    <form action="" method="POST">
-        <input type="text" placeholder="Search.." name="search_bar" class="box">
+ <section class="search-form">
+    <form action="" method="POST" onsubmit="searchFunction(); return false;">
+        <input type="text" placeholder="Search.." name="search_bar" class="box" id="searchInput">
         <button type="submit" class="fas fa-search" name="search_btn"></button>
     </form>
-  </section>
-  </div>
+</section>
+<div id="searchResults"></div>
   
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
@@ -93,6 +93,24 @@ body {font-size:16px;}
   function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
+
+    const pages = [
+    { title: "Home", url: "index.html" },
+    { title: "Designers", url: "designers.html" },
+    { title: "Packages", url: "packages.html" }
+];
+
+function searchFunction() {
+    const searchQuery = document.getElementById("search-bar").value;
+    const foundPage = pages.find(page => page.title.toLowerCase() === searchQuery.toLowerCase());
+
+    if (foundPage) {
+        // Redirect to the corresponding page URL
+        window.location.href = foundPage.url;
+    } else {
+        alert("Page not found.");
+    }
+}
   }
   </script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
