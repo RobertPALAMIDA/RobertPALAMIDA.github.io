@@ -1080,6 +1080,10 @@ section{
       justify-content: center;
       min-height: 100vh;
    }
+ .carousel-container {
+  width: 325px;
+  overflow: hidden;
+ }
  .slider-wrapper .image-list {
     display: grid;
     gap: 18px;
