@@ -76,6 +76,12 @@ body {font-size:16px;}
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
   }
+  const carousel = document.querySelector(".carousel"); 
+  const dragging = (e) => {
+    console.scrollLeft = e.pageX;
+  }
+  carousel.addEventListener("mousemove", dragging);
+  
   </script>
 </body>
 </html>
