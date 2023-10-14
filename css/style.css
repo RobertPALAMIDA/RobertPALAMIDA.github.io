@@ -306,6 +306,21 @@ section{
 .wrapper i:last-child{
    right:-23px;
 }
+
+.wrapper i.fa-angle-left, .wrapper i.fa-angle-right {
+    font-size: 24px; /* Adjust the font size as needed */
+    cursor: pointer;
+}
+
+/* Adjust the margin for the left arrow */
+.wrapper i.fa-angle-left {
+    margin-right: 10px;
+}
+
+/* Adjust the margin for the right arrow */
+.wrapper i.fa-angle-right {
+    margin-left: 10px;
+}
 .wrapper .carousel {
    white-space: nowrap;
    font-size: 0px;
