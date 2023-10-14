@@ -1074,16 +1074,23 @@ section{
       flex-flow: column;
       gap:0;
    }
- .slider-wrapper .image-list {
-   display: flex;
-   overflow-x: auto;
-   scrollbar-width: thin;
+   .wrapper{
+      max-width: 1200px
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+   }
+   .wrapper .carousel {
    white-space: nowrap;
- }   
-   
- .slider-wrapper .image-list .image-item {
-    width: 325px;
-    height: 400px;
+   font-size: 0px;
+   cursor:pointer;
+   }   
+ .carousel img{
+    height: 340px;
     object-fit: cover;
+    margin-left:14px;
+    width: calc(100% / 3);
  }
+ 
 }
