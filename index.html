@@ -44,6 +44,9 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
+  <div class="heading">
+    <h3></h3>
+  </div>
 <!--Top navbar-->
 <div class="topnav">
   <a class="active" href="#">Home</a>
@@ -53,7 +56,14 @@ body {font-size:16px;}
   <a href="packages.html">Packages</a>
   <a href="services.html">Services</a> 
 </div>
-  <input type="text" placeholder="Search..">
+  <!--Searchbar-->
+  <section class="search-form">
+    <form action="" method="POST">
+        <input type="text" placeholder="Search.." name="search_bar" class="box">
+        <button type="submit" class="fas.fa-search" name="search_btn></button>
+    </form>
+  </section>
+
   
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
