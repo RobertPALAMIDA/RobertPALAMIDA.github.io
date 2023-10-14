@@ -333,3 +333,6 @@ section{
     margin-left:14px;
     width: calc(100% / 3);
  }
+.carousel img:first-child{
+   margin-left:0px;
+}
