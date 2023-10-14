@@ -301,10 +301,10 @@ section{
    transform:translateY(-50%);
 }
 .wrapper i:first-child{
-   left:-100px;
+   left:-10px;
 }
 .wrapper i:last-child{
-   right:-100px;
+   right:-10px;
 }
 
 .wrapper i.fa-angle-left, .wrapper i.fa-angle-right {
