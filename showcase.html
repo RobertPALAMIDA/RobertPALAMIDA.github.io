@@ -15,6 +15,13 @@ body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
+<script defer>
+   const carousel = document.querySelector(".carousel"); 
+    const dragging = (e) => {
+    console.scrollLeft = e.pageX;
+  }
+  carousel.addEventListener("mousemove", dragging);
+</script>
 </head>
 <body>
 <!--sidebar-->
@@ -76,12 +83,6 @@ body {font-size:16px;}
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
   }
-  const carousel = document.querySelector(".carousel"); 
-  const dragging = (e) => {
-    console.scrollLeft = e.pageX;
-  }
-  carousel.addEventListener("mousemove", dragging);
-  
   </script>
 </body>
 </html>
