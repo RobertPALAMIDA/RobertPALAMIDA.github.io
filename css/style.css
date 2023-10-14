@@ -1084,7 +1084,7 @@ section{
   width: 325px;
   overflow: hidden;
  }
- .slider-wrapper .image-list {
+ .carousel-container .slider-wrapper .image-list {
     display: grid;
     gap: 18px;
     font-size: 0;
@@ -1092,7 +1092,7 @@ section{
     scrollbar-width:none;
     grid-template-columns: repeat(10, 1fr);
  }   
-.slider-wrapper .image-list .image-item {
+.carousel-container .slider-wrapper .image-list .image-item {
     width: 325px;
     height: 400px;
     object-fit: cover;
