@@ -1000,7 +1000,24 @@ section{
    height: 25rem;
 }
 
-
+.wrapper{
+      max-width: 1200px
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+   }
+   .wrapper .carousel {
+   white-space: nowrap;
+   font-size: 0px;
+   cursor:pointer;
+   }   
+ .carousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left:14px;
+    width: calc(100% / 3);
+ }
 
 /* media queries  */
 
@@ -1075,21 +1092,4 @@ section{
       gap:0;
    }
 }
-   .wrapper{
-      max-width: 1200px
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-   }
-   .wrapper .carousel {
-   white-space: nowrap;
-   font-size: 0px;
-   cursor:pointer;
-   }   
- .carousel img{
-    height: 340px;
-    object-fit: cover;
-    margin-left:14px;
-    width: calc(100% / 3);
- }
+   
