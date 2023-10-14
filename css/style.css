@@ -302,7 +302,13 @@ section{
   z-index: 1; /* Ensure the arrows are above the images */
 }
 
+.wrapper i:first-child{
+   left:-23px;
+}
 
+.wrapper i:last-child{
+   right:-23px;
+}
 
 /* Add this rule to make the arrows visible */
 .wrapper i:hover {
