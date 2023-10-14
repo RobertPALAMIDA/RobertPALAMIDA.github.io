@@ -1074,6 +1074,7 @@ section{
       flex-flow: column;
       gap:0;
    }
+}
    .wrapper{
       max-width: 1200px
       display: flex;
@@ -1092,5 +1093,3 @@ section{
     margin-left:14px;
     width: calc(100% / 3);
  }
- 
-}
