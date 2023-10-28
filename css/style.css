@@ -285,8 +285,8 @@ section{
 }
 
 .toggle-label {
-   width: 60px;
-   height: 60px;
+   width: 200px;
+   height: 200px;
    position: relative;
    display: block;
    border-radius: 100px;
@@ -303,7 +303,7 @@ section{
    top: 10px;
    left: 10px;
    background: linear-gradient(180deg,#ffcc89,#d8860b);
-   border-radius: 180px;
+   border-radius: 100px;
    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.2);
    transition: 0.3s;
 }
@@ -313,13 +313,13 @@ section{
 }
 
 .input-toggle:checked + .toggle-label:after {
-   left: 490px;
+   left: 50px;
    transform: translateX(-100%);
    background: linear-gradient(180deg,#777,#3a3a3a);
 }
 
 .toggle-label:active:after {
-   width: 60px;   
+   width: 30px;   
 }
 
 .wrapper{
