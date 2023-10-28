@@ -288,6 +288,18 @@ label {
    cursor: pointer;
 }
 
+label:after {
+   content:"";
+   width: 180px;
+   height: 180px;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   background: linear-gradient(180deg,#ffcc89,#d8860b);
+   border-radius: 180px;
+   box-shadow: inset 0px 5px 15px rgba(0,0,0,0.2);
+}
+
 .wrapper{
    max-width: 1200px;
    padding: 0 35px;
