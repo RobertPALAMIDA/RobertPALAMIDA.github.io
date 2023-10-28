@@ -286,7 +286,7 @@ section{
 
 .toggle-label {
    width: 180px;
-   height: 70px;
+   height: 60px;
    position: relative;
    display: block;
    border-radius: 100px;
@@ -297,9 +297,8 @@ section{
 
 .toggle-label:after {
    content:"";
-   top: 0;
-   width: 60px;
-   height: 60px;
+   width: 40px;
+   height: 40px;
    position: absolute;
    top: 10px;
    left: 10px;
