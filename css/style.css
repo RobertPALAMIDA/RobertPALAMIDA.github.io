@@ -298,7 +298,7 @@ section{
 .toggle-label ion-icon {
   position: absolute;
   width: 40px;
-  top: 30px;
+  top: 25px;
   transition: 0.3s;
   z-index: 100;
 }
@@ -312,7 +312,6 @@ section{
   left: 90px;
   fill: #7e7e7e;
 }
-
 
 .toggle-label:after {
    content:"";
