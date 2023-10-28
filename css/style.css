@@ -318,6 +318,10 @@ section{
    background: linear-gradient(180deg,#777,#3a3a3a);
 }
 
+.toggle-label:active:after {
+   width: 60px;   
+}
+
 .wrapper{
    max-width: 1200px;
    padding: 0 35px;
