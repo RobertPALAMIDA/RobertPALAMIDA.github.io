@@ -297,7 +297,7 @@ section{
 
 .toggle-label:after {
    content:"";
-   width: 280px;
+   width: 60px;
    height: 60px;
    position: absolute;
    top: 10px;
