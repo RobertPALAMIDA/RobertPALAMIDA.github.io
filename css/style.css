@@ -295,6 +295,25 @@ section{
    transition: 0.3s;
 }
 
+.toggle-label ion-icon {
+   position: absolute;
+   width: 120px;
+   top: 40px;
+   z-index: 100;   
+}
+
+.toggle-label ion-icon.sun {
+   left: 40px;
+   fill: #fff;
+   transition: 0.3s;
+}
+
+.toggle-label ion-icon.moon {
+   left: 140px;
+   fill: #7e7e7e;
+   transition: 0.3s;
+}
+
 .toggle-label:after {
    content:"";
    width: 40px;
@@ -320,6 +339,14 @@ section{
 
 .toggle-label:active:after {
    width: 30px;   
+}
+
+.input-toggle:checked + .toggle-label ion-icon.sun  {
+   fill: #7e7e7e;
+}
+
+.input-toggle:checked + .toggle-label ion-icon.moon  {
+   fill: #fff;
 }
 
 .wrapper{
