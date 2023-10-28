@@ -297,6 +297,7 @@ section{
 
 .toggle-label:after {
    content:"";
+   top: 0;
    width: 60px;
    height: 60px;
    position: absolute;
@@ -314,7 +315,7 @@ section{
 
 .input-toggle:checked + .toggle-label:after {
    left: 50px;
-   transform: translateX(-100%);
+   transform: translateX(100%);
    background: linear-gradient(180deg,#777,#3a3a3a);
 }
 
