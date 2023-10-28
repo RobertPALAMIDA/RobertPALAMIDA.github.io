@@ -278,7 +278,7 @@ section{
    text-decoration: underline;
 }
 
-label {
+.toggle-label {
    width: 500px;
    height: 200px;
    position: relative;
@@ -288,7 +288,7 @@ label {
    cursor: pointer;
 }
 
-label:after {
+.toggle-label:after {
    content:"";
    width: 180px;
    height: 180px;
