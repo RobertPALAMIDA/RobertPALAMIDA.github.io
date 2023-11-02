@@ -418,7 +418,7 @@ section{
   color: var(--primary-color);
 }
 .wrapper .carousel {
-   primary-color-space: nowrap;
+   white-space: nowrap;
    font-size: 0px;
    cursor:pointer;
    overflow:hidden;
