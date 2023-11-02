@@ -250,6 +250,7 @@ section{
    border:var(--border);
    padding:1.4rem;
    font-size: 1.8rem;
+   color:var(--black);
 }
 
 .search-form form .fa-search{
