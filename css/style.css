@@ -17,6 +17,7 @@
    --border:.2rem solid var(--secondary-color);
 }
 .dark-theme{
+    background-color: #333;
    --yellow:#fed330;
    --red:#e74c3c;
    --primary-color:#212121;
