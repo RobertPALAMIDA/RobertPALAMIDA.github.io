@@ -35,7 +35,7 @@
 }
 
 *::selection{
-   background-color: var(--yellow);
+   background-color: var(--red);
    color:var(--secondary-color);
 }
 
@@ -97,7 +97,7 @@ section{
 }
 
 .heading p a{
-   color:var(--yellow);
+   color:var(--red);
 }
 
 .heading p a:hover{
@@ -117,7 +117,7 @@ section{
 }
 
 .btn{
-   background-color: var(--yellow);
+   background-color: var(--red);
    color:var(--secondary-color);
 }
 
@@ -147,7 +147,7 @@ section{
    align-items: center;
    gap:1rem;
    justify-content: space-between;
-   background-color: var(--yellow);
+   background-color: var(--red);
 }
 
 .message span{
@@ -207,7 +207,7 @@ section{
 }
 
 .header .flex .navbar a:hover{
-   color:var(--yellow);
+   color:var(--red);
    text-decoration: underline;
 }
 
@@ -219,7 +219,7 @@ section{
 }
 
 .header .flex .icons > *:hover{
-   color: var(--yellow);
+   color: var(--red);
 }
 
 .header .flex .icons span{
