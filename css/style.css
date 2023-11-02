@@ -3,10 +3,19 @@
 :root{
    --yellow:#fed330;
    --red:#e74c3c;
-   --white:#fff;
-   --black:#222;
+   --primary-color:#fff;
+   --secondary-color:#212121;
    --light-color:#777;
-   --border:.2rem solid var(--black);
+   --border:.2rem solid var(--secondary-color);
+}
+
+.dark-theme{
+   --yellow:#fed330;
+   --red:#e74c3c;
+   --primary-color:#212121;
+   --secondary-color:#fff;
+   --light-color:#777;
+   --border:.2rem solid var(--secondary-color);
 }
 
 *{
@@ -19,7 +28,7 @@
 
 *::selection{
    background-color: var(--yellow);
-   color:var(--black);
+   color:var(--secondary-color);
 }
 
 ::-webkit-scrollbar{
@@ -52,7 +61,7 @@ section{
    text-align: center;
    margin-bottom: 2.5rem;
    font-size: 4rem;
-   color:var(--black);
+   color:var(--secondary-color);
    text-transform: uppercase;
    text-decoration: underline;
    text-underline-offset: 1rem;
@@ -64,13 +73,13 @@ section{
    justify-content: center;
    gap:1rem;
    flex-flow: column;
-   background-color: var(--black);
+   background-color: var(--secondary-color);
    min-height: 20rem;
 }
    
 .heading h3{
    font-size: 5rem;
-   color:var(--white);
+   color:var(--primary-color);
    text-transform: capitalize;
 }
 
@@ -85,7 +94,7 @@ section{
 
 .heading p a:hover{
    text-decoration: underline;
-   color:var(--white);
+   color:var(--primary-color);
 }
 
 .btn,
@@ -101,12 +110,12 @@ section{
 
 .btn{
    background-color: var(--yellow);
-   color:var(--black);
+   color:var(--secondary-color);
 }
 
 .delete-btn{
    background-color: var(--red);
-   color:var(--white);
+   color:var(--primary-color);
 }
 
 .btn:hover,
@@ -135,7 +144,7 @@ section{
 
 .message span{
    font-size: 2rem;
-   color:var(--black);
+   color:var(--secondary-color);
 }
 
 .message i{
@@ -145,7 +154,7 @@ section{
 }
 
 .message i:hover{
-   color:var(--black);
+   color:var(--secondary-color);
 }
 
 .empty{
@@ -167,7 +176,7 @@ section{
    position: sticky;
    top:0; left:0; right:0;
    z-index: 1000;
-   background-color: var(--white);
+   background-color: var(--primary-color);
    border-bottom: var(--border);
 }
 
@@ -180,12 +189,12 @@ section{
 
 .header .flex .logo{
    font-size: 2.5rem;
-   color:var(--black);
+   color:var(--secondary-color);
 }
 
 .header .flex .navbar a{
    font-size: 2rem;
-   color:var(--black);
+   color:var(--secondary-color);
    margin:0 1rem;
 }
 
@@ -197,7 +206,7 @@ section{
 .header .flex .icons > *{
    margin-left: 1.5rem;
    font-size: 2.5rem;
-   color:var(--black);
+   color:var(--secondary-color);
    cursor: pointer;
 }
 
@@ -224,20 +233,20 @@ section{
    border:var(--border);
    padding:1.4rem;
    font-size: 1.8rem;
-   color:var(--black);
+   color:var(--secondary-color);
 }
 
 .search-form form .fa-search{
    width: 6rem;
-   background-color: var(--black);
-   color:var(--white);
+   background-color: var(--secondary-color);
+   color:var(--primary-color);
    cursor: pointer;
    font-size: 2.5rem;
 }
 
 .search-form form .fa-search:hover{
    background-color: var(--yellow);
-   color:var(--black);
+   color:var(--secondary-color);
 }
 
 .form-container form{
@@ -250,7 +259,7 @@ section{
 
 .form-container form h3{
    font-size: 2.5rem;
-   color:var(--black);
+   color:var(--secondary-color);
    text-transform: uppercase;
    margin-bottom: 1rem;
 }
@@ -261,7 +270,7 @@ section{
    border:var(--border);
    padding:1.4rem;
    font-size: 1.8rem;
-   color:var(--black);
+   color:var(--secondary-color);
 }
 
 .form-container form p{
@@ -271,7 +280,7 @@ section{
 }
 
 .form-container form p a{
-   color:var(--black);
+   color:var(--secondary-color);
 }
 
 .form-container form p a:hover{
@@ -390,11 +399,11 @@ section{
 
 /* Add this rule to make the arrows visible */
 .wrapper i:hover {
-  background: var(--black);
-  color: var(--white);
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 .wrapper .carousel {
-   white-space: nowrap;
+   primary-color-space: nowrap;
    font-size: 0px;
    cursor:pointer;
    overflow:hidden;
