@@ -3,6 +3,7 @@
 :root{
    --yellow:#fed330;
    --red:#e74c3c;
+   --black:#212121
    --primary-color:#fff;
    --secondary-color:#212121;
    --light-color:#777;
@@ -11,6 +12,7 @@
 .light-theme{   
    --yellow:#fed330;
    --red:#e74c3c;
+   --black:#212121
    --primary-color:#fff;
    --secondary-color:#212121;
    --light-color:#777;
@@ -21,6 +23,7 @@
     background-color: #333;
    --yellow:#fed330;
    --red:#e74c3c;
+   --black:#212121
    --primary-color:#212121;
    --secondary-color:#fff;
    --light-color:#777;
@@ -248,8 +251,7 @@ section{
    border:var(--border);
    padding:1.4rem;
    font-size: 1.8rem;
-   color:var(--secondary-color);
-   background-color: var(--primary-color);
+   color:var(--black);
 }
 
 .search-form form .fa-search{
