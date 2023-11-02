@@ -16,6 +16,7 @@
    --light-color:#777;
    --border:.2rem solid var(--secondary-color);
 }
+
 .dark-theme{
     background-color: #333;
    --yellow:#fed330;
@@ -26,8 +27,10 @@
    --border:.2rem solid var(--secondary-color);
 }
 
-.w3-container {
-  color: var(--primary-color);
+.body{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 *{
