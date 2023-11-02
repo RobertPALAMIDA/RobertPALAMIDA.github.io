@@ -240,11 +240,9 @@ section{
    display: none;
 }
 
-
 .search-form form{
    display: flex;
    gap:1.3rem;
-   color: var(--black);
 }
 
 .search-form form .box{
