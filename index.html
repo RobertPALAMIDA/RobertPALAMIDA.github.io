@@ -42,7 +42,7 @@ body {font-size:16px;}
     <a id="help_side_bar" href="help.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Help</a>      
   </div>
   <div>
-    <input type="checkbox" id="dark/light-mode_toggle" class="input-toggle"/>
+    <input type="checkbox" id="mode_toggle" class="input-toggle"/>
     <label for="dark/light-mode_toggle" class="toggle-label">
         <ion-icon name="sunny-outline" class="sun"></ion-icon>
         <ion-icon name="moon-outline" class="moon"></ion-icon>
@@ -131,6 +131,18 @@ function searchFunction() {
         alert("Page not found.");
     }
 }
+  </script>
+  <script>
+      //Switch modes
+      var mode_toggle = document.getElementById("mode_toggle");
+      mode_toggle.onchange = function() {
+          if (mode_toggle.checked){
+              document.body.classList.toggle("dark-theme");
+          }
+          else{
+              document.body.classList.toggle("light-theme");
+          }
+      }
   </script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
