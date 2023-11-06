@@ -472,6 +472,24 @@ iframe {
   margin: 0 auto;
 }
 
+/* Style for the FAQ sections */
+.faq-section {
+ margin-top: 20px;
+}
+.faq-question {
+  font-weight: bold;
+}
+
+/* Style for the contact information section */
+.contact-info {
+  margin-top: 20px;
+}
+
+/* Style for the how-to guide section */
+.how-to-guide {
+  margin-top: 20px;
+}
+
 @media screen and (max-width:900px)
 {
    .carousel img{
