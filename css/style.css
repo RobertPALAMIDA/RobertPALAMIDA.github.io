@@ -141,29 +141,37 @@ section{
    letter-spacing: .2rem;
 }
 
+.back-to-top-container {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 100px;
+    height: 60px; /* Fixed height to reserve space for the button */
+ }
+
 .back-to-top-button {
-        display: block;
-        position: fixed;
-        bottom: 20px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        background-color: var(--red);
-        color:var(--secondary-color);
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-        margin: 0 auto;
-        opacity: 0.4;
-        transition: opacity 0.3s ease-in-out;
-        z-index: 1000;
-    }
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: var(--red);
+    color:var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 auto;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+}
 
     /* Hover effect for the button */
     .back-to-top-button:hover {
-        background-color: #0056b3;
-        opacity: 1;
-    }
+    background-color: #0056b3;
+    opacity: 1;
+}
 
 .disabled{
    opacity: .5;
