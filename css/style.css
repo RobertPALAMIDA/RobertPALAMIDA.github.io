@@ -143,22 +143,21 @@ section{
 
 .back-to-top-container {
     position: fixed;
-    bottom: 0;
+    bottom: 50px; /* Adjust as needed */
     right: 20px;
     width: 100px;
     height: 60px; /* Fixed height to reserve space for the button */
- }
+}
 
 .back-to-top-button {
     display: block;
-    position: fixed;
-    top: 20px;
+    position: absolute; /* Change to absolute */
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
     background-color: var(--red);
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -168,8 +167,8 @@ section{
     z-index: 1000;
 }
 
-    /* Hover effect for the button */
-    .back-to-top-button:hover {
+/* Hover effect for the button */
+.back-to-top-button:hover {
     opacity: 1;
 }
 
