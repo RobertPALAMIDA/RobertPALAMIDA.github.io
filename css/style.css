@@ -148,8 +148,8 @@ section{
         left: 0;
         right: 0;
         text-align: center;
-        background-color: #007BFF;
-        color: #fff;
+        background-color: var(--red);
+        color:var(--secondary-color);
         padding: 10px 20px;
         border-radius: 5px;
         text-decoration: none;
