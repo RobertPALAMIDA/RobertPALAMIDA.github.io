@@ -75,7 +75,7 @@ body {font-size:16px;}
 <section class="search-form">
     <form action="javascript:void(0);" onsubmit="searchFunction(); return false;">
         <input type="text" placeholder="Search.." name="search_bar" class="box" id="searchInput">
-        <button type="submit" class="fas fa-search" name="searchBtn"></button>
+        <input type="submit" class="fas fa-search" value="Search" id="searchBtn">
     </form>
 </section>
 <div id="searchResults"></div>
@@ -147,7 +147,6 @@ searchBtn.addEventListener('click', function() {
    const searchTerm = searchBarInput.value.toLowerCase();
         // Search for the page in the pages array
         const foundPage = pages.find(page => page.title.toLowerCase() === searchTerm);
-
         if (foundPage) {
             // Redirect to the corresponding page URL
             window.location.href = foundPage.url;
