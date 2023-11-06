@@ -144,13 +144,16 @@ section{
 .back-to-top-button {
         display: block;
         position: fixed;
-        bottom: 20px;
-        right: 20px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
         background-color: #007BFF;
         color: #fff;
         padding: 10px 20px;
         border-radius: 5px;
         text-decoration: none;
+        margin: 0 auto;
     }
 
     /* Hover effect for the button */
