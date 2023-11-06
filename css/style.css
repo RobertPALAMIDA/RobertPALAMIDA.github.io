@@ -169,7 +169,6 @@ section{
 
     /* Hover effect for the button */
     .back-to-top-button:hover {
-    background-color: #0056b3;
     opacity: 1;
 }
 
