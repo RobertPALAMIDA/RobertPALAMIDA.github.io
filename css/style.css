@@ -144,7 +144,7 @@ section{
 .back-to-top-button {
         display: block;
         position: fixed;
-        bottom: 0;
+        bottom: 20px;
         left: 0;
         right: 0;
         text-align: center;
@@ -154,11 +154,15 @@ section{
         border-radius: 5px;
         text-decoration: none;
         margin: 0 auto;
+        opacity: 0.4;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 1000;
     }
 
     /* Hover effect for the button */
     .back-to-top-button:hover {
         background-color: #0056b3;
+        opacity: 1;
     }
 
 .disabled{
