@@ -141,6 +141,23 @@ section{
    letter-spacing: .2rem;
 }
 
+.back-to-top-button {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    /* Hover effect for the button */
+    .back-to-top-button:hover {
+        background-color: #0056b3;
+    }
+
 .disabled{
    opacity: .5;
    user-select: none;
