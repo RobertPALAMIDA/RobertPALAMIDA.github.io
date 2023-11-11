@@ -62,7 +62,23 @@ body {font-size:16px;}
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
-
+  
+<!--Top navbar-->
+<div class="topnav" style="margin-top: 20px;">
+  <a class="active" href="#">Home</a>
+  <a href="showcase.html">Showcase</a>
+  <a href="designers.html">Designer</a>
+  <a href="contact.html">Contact</a>
+  <a href="services.html">Services</a> 
+  
+  <!--Searchbar-->
+<section class="search-form" style="margin-top: 10px;">
+    <form action="#">
+        <input type="text" placeholder="Search.." name="search_bar" class="box" id="searchInput">
+        <button type="button" class="fas fa-search" value="Search" id="searchBtn"></button>
+    </form>
+</section>
+<div id="searchResults"></div>
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
     <h1 class="w3-jumbo"><b>Services</b></h1>
@@ -190,6 +206,28 @@ body {font-size:16px;}
           }
       }
   </script>
+    <script>
+    const pages = [
+    { title: "Home", url: "index.html" },
+    { title: "Designers", url: "designers.html" },
+    { title: "Services", url: "services.html" },
+    { title: "Showcase", url: "showcase.html" },
+    { title: "Help", url: "help.html" },
+];
+var searchBarInput = document.getElementById('searchInput'); 
+var searchBtn = document.getElementById('searchBtn');
+searchBtn.addEventListener('click', function() {
+   const searchTerm = searchBarInput.value.toLowerCase();
+        // Search for the page in the pages array
+        const foundPage = pages.find(page => page.title.toLowerCase() === searchTerm);
+        if (foundPage) {
+            // Redirect to the corresponding page URL
+            window.location.href = foundPage.url;
+        } else {
+            alert("Page not found.");
+        }
+    });
+</script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
