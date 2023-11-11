@@ -58,6 +58,7 @@ body {font-size:16px;}
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
@@ -159,6 +160,28 @@ searchBtn.addEventListener('click', function() {
         }
     });
  </script>
+ <script>
+    const pages = [
+    { title: "Home", url: "index.html" },
+    { title: "Designers", url: "designers.html" },
+    { title: "Services", url: "services.html" },
+    { title: "Showcase", url: "showcase.html" },
+    { title: "Help", url: "help.html" },
+];
+var searchBarInput = document.getElementById('searchInput'); 
+var searchBtn = document.getElementById('searchBtn');
+searchBtn.addEventListener('click', function() {
+   const searchTerm = searchBarInput.value.toLowerCase();
+        // Search for the page in the pages array
+        const foundPage = pages.find(page => page.title.toLowerCase() === searchTerm);
+        if (foundPage) {
+            // Redirect to the corresponding page URL
+            window.location.href = foundPage.url;
+        } else {
+            alert("Page not found.");
+        }
+    });
+</script>
  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
