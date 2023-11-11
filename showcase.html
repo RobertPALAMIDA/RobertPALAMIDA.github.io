@@ -100,6 +100,24 @@ body {font-size:16px;}
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left: 340px; padding-left: 50px; padding-right: 50px;"> <!-- Added padding -->
+ 
+ <!--Top navbar-->
+<div class="topnav" style="margin-top: 20px;">
+  <a class="active" href="#">Home</a>
+  <a href="showcase.html">Showcase</a>
+  <a href="designers.html">Designer</a>
+  <a href="contact.html">Contact</a>
+  <a href="services.html">Services</a> 
+  
+  <!--Searchbar-->
+<section class="search-form" style="margin-top: 10px;">
+    <form action="#">
+        <input type="text" placeholder="Search.." name="search_bar" class="box" id="searchInput">
+        <button type="button" class="fas fa-search" value="Search" id="searchBtn"></button>
+    </form>
+</section>
+<div id="searchResults"></div>    
+ 
   <!-- Header -->
   <div class="w3-container" style="margin-top: 20px" id="showcase">
     <h1 class="w3-jumbo"><b>Showcase</b></h1>
@@ -131,6 +149,20 @@ body {font-size:16px;}
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
   }
+  </script>
+  <script>
+      //Switch modes
+      var mode_toggle = document.getElementById("mode_toggle");
+      mode_toggle.onchange = function() {
+          if (mode_toggle.checked){
+             document.body.classList.add("dark-theme");
+             document.body.classList.remove("light-theme");
+          }
+          else{
+             document.body.classList.add("light-theme");
+             document.body.classList.remove("dark-theme");
+          }
+      }
   </script>
   <script>
       //Switch modes
